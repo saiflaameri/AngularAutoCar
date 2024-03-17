@@ -1,0 +1,188 @@
+$shade-one: #673AB7
+$shade-two: #512DA8
+
+* 
+    box-sizing: border-box
+
+
+body 
+    margin: 0
+    padding: 0
+
+
+.login-container 
+    ::selection 
+        background-color: transparent
+    
+    ::-moz-selection 
+        background-color: transparent
+    
+
+    display: flex
+    height: 100vh
+
+    .left-section 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        animation-name: left-section
+        animation-duration: 1s
+        animation-fill-mode: both
+        animation-delay: 1s
+    
+
+    .right-section 
+        flex: 1
+        background: linear-gradient(to right, $shade-one 0%, $shade-two 100%)
+        background-image: url('vv.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        transition: 1s cubic-bezier(0.95, 0.46, 0.45, 0.94)
+    
+
+    .login-header 
+        text-align: center
+
+        .brand-logo 
+            width: 170px
+            margin: 0 auto
+            transition-delay: 2s
+            .logo-img 
+                width: 100%
+            
+        
+
+        .title 
+            margin: 0
+            color: $shade-one
+        
+
+        .sub-title 
+            margin-top: 10px
+            font-weight: normal
+            font-size: 15px
+            color: rgba(0, 0, 0, 0.4)
+        
+    
+
+    .login-form 
+        display: flex
+        flex-direction: column
+
+        .forgot-password 
+            text-align: right
+            margin: 3px 0
+            .fp-link 
+                color: #000
+                font-size: 14px
+                letter-spacing: .2px
+                text-decoration: none
+                transition-duration: .3s
+                &:hover                    
+                    color: $shade-one
+                
+            
+        
+
+
+        .form-field-group 
+            .form-field 
+                height: 50px
+                width: 100%
+                font-size: 14px
+                padding: 3px 10px
+                margin: 12px auto
+                outline: 0
+                border: 2px solid #ddd
+                border-radius: 4px
+                transition-duration: .2s
+                
+                &:hover 
+                    border-color: lighten($shade-one, 30)
+                
+
+                &:focus 
+                    border-color: $shade-one
+                
+            
+        
+
+        .login-button 
+            margin-top: 12px
+            padding: 12px 10px
+            font-size: 12px
+            font-weight: bold
+            color: #fff
+            letter-spacing: 1.5px
+            border: none
+            border-radius: 3px
+            background-color: $shade-one
+            cursor: pointer
+            transition-duration: 0.5s
+
+            &:hover 
+                background-color: $shade-two
+                box-shadow: 0 0px 8px -2px #000
+            
+        
+
+    
+
+    .animation 
+        animation-name: move
+        animation-duration: 1s
+        animation-fill-mode: both
+        animation-delay: 2s
+
+        &.a1 
+            animation-delay: 2s
+        
+
+        &.a2 
+            animation-delay: 2.1s
+        
+
+        &.a3 
+            animation-delay: 2.2s
+        
+
+        &.a4 
+            animation-delay: 2.3s
+        
+
+        &.a5 
+            animation-delay: 2.4s
+        
+
+        &.a6 
+            animation-delay: 2.5s
+        
+    
+
+
+@keyframes move 
+    0% 
+        opacity: 0
+        visibility: hidden
+        transform: translateY(-40px)
+    
+
+    100% 
+        opacity: 1
+        visibility: visible
+        transform: translateY(0)
+    
+
+
+@keyframes left-section 
+    0% 
+        opacity: 0
+        width: 0
+    
+
+    100% 
+        opacity: 1
+        padding: 1.5rem 2.5rem
+        width: 440px
+    

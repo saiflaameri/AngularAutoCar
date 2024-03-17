@@ -1,0 +1,42 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<section class="login-section">
+	<div class="login-container">
+		<div class="left-section">
+			<div class="login-header">
+<!-- 				<div class="brand-logo">
+					<img class="logo-img" src="img/logo.png" alt="brand-logo" />
+				</div> -->
+				<h1 class="title animation a1">Welcome Back!</h1>
+				<h4 class="sub-title animation a2">                        <img src="https://www.picosoft.biz/wp-content/uploads/2017/01/Logo-1.png" alt="Logo" height="40px">
+				</h4>
+				
+				  
+			</div>
+			<div #c>
+				<div class="alert alert-danger">
+					<i class="fa fa-exclamation-triangle"></i>
+					{{ereure}}
+				  </div>
+				  
+            </div>
+			
+			<form action="#" method="post" class="login-form" [formGroup]="loginForm">
+				<div class="form-field-group animation a3">
+					<input type="email" class="form-control" placeholder="Username" formControlName="email"  [(ngModel)]="email" name="username">
+				</div>
+				<div class="form-field-group animation a4">
+					<input type="password" class="form-control" placeholder="Password" formControlName="password" [(ngModel)]="password" name="password" >
+				</div>
+				<span class="forgot-password animation a5">
+                    </span>
+				<button type="submit" (click)="login()" class="login-button animation a6" #c>LOGIN</button>
+			</form>
+		</div>
+		<div class="right-section"></div>
+	</div>
+</section>
+<style>
+
+  
+</style>

@@ -1,0 +1,120 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')
+
+.vehicle-card 
+  perspective: 1000px
+  width: 300px
+  height: 200px
+  position: relative
+  transform-style: preserve-3d
+  
+
+  .card-inner 
+    width: 100%
+    height: 100%
+    transition: transform 0.5s
+    transform-style: preserve-3d
+  
+
+  .card-front,
+  .card-back 
+    position: absolute
+    width: 100%
+    height: 100%
+    backface-visibility: hidden
+    border-radius: 15%
+  
+
+  .card-front 
+    transform: rotateY(0deg)
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+
+
+
+  .card-back 
+    transform: rotateY(180deg)
+    background-color: #f5f5f5
+    padding: 20px
+    text-align: center
+    
+
+
+
+  &:hover .card-inner 
+    transform: rotateY(180deg)
+
+.imgcard
+    width: 100%
+    height: 100%
+
+.card-actions 
+  position: absolute
+  bottom: 10px
+  left: 50%
+  transform: translateX(-50%)
+  display: flex
+  gap: 10px
+
+img
+    border-radius: 15%
+   
+
+.logopicosoft 
+  position: absolute
+  top: 20%
+  left: 50%
+  transform: translate(-50%, -50%)
+.disponible 
+        margin-top: 20px
+        text-align: center
+        font-size: 30px
+        position: absolute
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%)
+        .status 
+          display: inline-block
+          padding: 4px 8px
+          border-radius: 4px
+          font-weight: bold
+       
+
+        .text-success 
+          color: #01ff3cd9
+          background-color: rgba(255, 255, 255, 0.829)
+          border-radius: 4px
+          font-weight: bold
+       
+
+        .text-danger 
+          color: #dc3545
+          background-color: rgba(0, 0, 0, 0.544)
+          padding: 4px 8px
+          border-radius: 4px
+          font-weight: bold
+     
+.card-header 
+  background-color: #d30303
+  color: #fff
+  font-size: 15px
+  font-weight: bold
+  display: flex
+  align-items: center
+  justify-content: center
+
+  border-radius:4px
+a.delete 
+  color: #F44336
+
+.vehiculeph
+  height: 100%
+  width: 60%
+
+
+
+
+
+

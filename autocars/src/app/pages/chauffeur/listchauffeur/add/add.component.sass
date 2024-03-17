@@ -1,0 +1,54 @@
+$form-bg: #ffffff
+$form-border-color: #ddd
+$form-border-radius: 3px
+$form-padding: 15px
+
+$form-label-color: #333
+$form-label-font-size: 16px
+$form-label-margin-bottom: 5px
+
+$form-input-border-radius: 3px
+$form-input-border-color: #250585
+$form-input-border-width: 1px
+$form-input-background-color: #fff
+$form-input-color: #333
+$form-input-font-size: 16px
+$form-input-padding: 10px
+
+$form-submit-background-color: #428bca
+$form-submit-color: #a05c5c
+$form-submit-font-size: 16px
+$form-submit-padding: 10px 20px
+$form-submit-border-radius: 3px
+
+.form 
+  background-color: $form-bg
+  border: 1px solid $form-border-color
+  border-radius: $form-border-radius
+  padding: $form-padding
+  width: 50%
+  height: 0%
+  margin-left: 30%
+  
+  label 
+    color: $form-label-color
+    font-size: $form-label-font-size
+    margin-bottom: $form-label-margin-bottom
+  
+  input[type="text"], input[type="number"], input[type="email"], input[type="password"], select, textarea 
+    border-radius: $form-input-border-radius
+    border: $form-input-border-width solid $form-input-border-color
+    background-color: $form-input-background-color
+    color: $form-input-color
+    font-size: $form-input-font-size
+    padding: $form-input-padding
+  
+  button[type="submit"] 
+    background-color: $form-submit-background-color
+    color: $form-submit-color
+    font-size: $form-submit-font-size
+    padding: $form-submit-padding
+    border-radius: $form-submit-border-radius
+
+    
+
